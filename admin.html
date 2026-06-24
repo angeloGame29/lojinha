@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Painel Admin</title>
+</head>
+
+<body>
+
+    <script src="/src/js/auth.js"></script>
+    <h1>Painel Administrativo</h1>
+    <button onclick="logout()">Sair</button>
+
+    <form id="product-form">
+
+        <input type="text" id="name" placeholder="Nome do Produto" required>
+
+        <select id="cat">
+            <option value="eletronicos">Eletrônicos</option>
+            <option value="informatica">Informática</option>
+            <option value="acessorios">Acessórios</option>
+        </select>
+
+        <input type="number" id="price" placeholder="Preço" step="0.01" required>
+
+        <textarea id="desc" placeholder="Descrição"></textarea>
+
+        <input type="file" id="image" placeholder="insira uma imagem">
+
+        <input type="text" id="emoji" placeholder="Emoji">
+        <input type="number" id="oldPrice" placeholder="Preço Antigo" step="0.01">
+        <input type="number" id="stars" placeholder="Estrelas (1-5)" min="1" max="5">
+
+        <input type="text" id="badge" placeholder="Badge (Hot, Novo...)">
+
+        <select id="badgeType">
+            <option value="badge-accent">Accent</option>
+            <option value="badge-success">Success</option>
+            <option value="badge-warning">Warning</option>
+        </select>
+
+        <label>
+            Em promoção?
+            <input type="checkbox" id="promo">
+        </label>
+
+        <button type="submit">
+            Salvar Produto
+        </button>
+
+    </form>
+
+    <hr>
+
+    <div id="products-list"></div>
+
+    <script src="/src/js/admin.js"></script>
+
+
+
+</body>
+
+</html>

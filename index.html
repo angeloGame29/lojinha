@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TechStore - Os melhores produtos de eletrônicos, informática e acessórios com preços incríveis e entrega rápida.">
+    <meta name="keywords" content="eletrônicos, informática, acessórios, loja virtual, comprar online">
+    <meta name="author" content="TechStore">
+    <meta property="og:title" content="TechStore - Tecnologia ao seu alcance">
+    <meta property="og:description" content="Os melhores produtos de tecnologia com preços imbatíveis.">
+    <meta property="og:type" content="website">
+    <title>TechStore — Tecnologia ao seu alcance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/src/css/style.css">
+    
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div id="announcement-bar" role="marquee" aria-label="Promoções e avisos">
+        <div class="announcement-slides">
+            <span>Frete grátis em compras acima de R$ 299</span>
+            <span>Use o cupom BEMVINDO10 e ganhe 10% de desconto</span>
+            <span>Parcelamento em até 12x sem juros</span>
+            <span>Atendimento via WhatsApp das 8h às 20h</span>
+            <span>Frete grátis em compras acima de R$ 299</span>
+            <span>Use o cupom BEMVINDO10 e ganhe 10% de desconto</span>
+            <span>Parcelamento em até 12x sem juros</span>
+            <span>Atendimento via WhatsApp das 8h às 20h</span>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header id="navbar" role="banner">
+        <div class="container">
+            <nav class="nav-inner" aria-label="Navegação principal">
+                <a href="#home" class="nav-logo" aria-label="TechStore - Página inicial">
+                    <div class="logo-icon" aria-hidden="true"><i class="fas fa-bolt"></i></div>
+                    Tech<span>Store</span>
+                </a>
+                <div class="nav-links" role="list">
+                    <a href="#home" class="active" role="listitem">Início</a>
+                    <a href="#produtos" role="listitem">Produtos</a>
+                    <a href="#sobre" role="listitem">Sobre</a>
+                    <a href="#avaliacoes" role="listitem">Avaliações</a>
+                    <a href="#faq" role="listitem">FAQ</a>
+                    <a href="#contato" role="listitem">Contato</a>
+                    <a href="#localizacao" role="listitem">Localização</a>
+                    <a href="/admin.html" role="listitem">Administrativo</a>
+                </div>
+                <div class="nav-actions">
+                    <div class="nav-search-wrap">
+                        <i class="fas fa-search nav-search-icon" aria-hidden="true"></i>
+                        <input type="search" id="nav-search-input" placeholder="Buscar produtos..."
+                            aria-label="Buscar produtos">
+                    </div>
+                    <button class="nav-btn" id="theme-toggle" aria-label="Alternar modo claro/escuro"
+                        title="Alternar tema">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                    <button class="nav-btn" id="cart-btn" aria-label="Abrir carrinho de compras" title="Carrinho">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+                    </button>
+                    <button id="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+            <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+                <a href="#home">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#avaliacoes">Avaliações</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contato">Contato</a>
+                <a href="#localizacao">Localização</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO CAROUSEL -->
+    <section id="home" aria-label="Banner principal">
+        <div id="hero">
+            <div class="hero-slides" id="hero-slides" role="region" aria-label="Slides promocionais">
+                <!-- Slide 1 -->
+                <div class="hero-slide hero-slide-1">
+                    <div class="container">
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
+                            <div class="hero-content">
+                                <div class="hero-tag"><i class="fas fa-fire" aria-hidden="true"></i> Oferta do Dia</div>
+                                <h1 class="hero-title">Tecnologia que <span class="highlight">transforma</span> sua vida
+                                </h1>
+                                <p class="hero-desc">Os melhores eletrônicos com preços imbatíveis. Entrega rápida para
+                                    todo o Brasil.</p>
+                                <div class="hero-actions">
+                                    <a href="#produtos" class="btn btn-primary"><i class="fas fa-shopping-bag"
+                                            aria-hidden="true"></i> Comprar Agora</a>
+                                    <a href="https://wa.me/5583999999999" class="btn btn-outline" target="_blank"
+                                        rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Falar no
+                                        WhatsApp</a>
+                                </div>
+                            </div>
+                            <div class="hero-visual">
+                                <div class="hero-card-float">
+                                    <div class="icon" aria-hidden="true">📱</div>
+                                    <div class="label">Produto em destaque</div>
+                                    <div class="value">iPhone 15</div>
+                                    <div class="sub">Até 12x sem juros</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="hero-slide hero-slide-2">
+                    <div class="container">
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
+                            <div class="hero-content">
+                                <div class="hero-tag"><i class="fas fa-tag" aria-hidden="true"></i> Novidades</div>
+                                <h1 class="hero-title">Informática de <span class="highlight">alta performance</span>
+                                </h1>
+                                <p class="hero-desc">Notebooks, desktops e periféricos para trabalho e entretenimento.
+                                    Preços direto da fábrica.</p>
+                                <div class="hero-actions">
+                                    <a href="#produtos" class="btn btn-primary"><i class="fas fa-laptop"
+                                            aria-hidden="true"></i> Ver Produtos</a>
+                                    <a href="#sobre" class="btn btn-outline">Conheça a TechStore</a>
+                                </div>
+                            </div>
+                            <div class="hero-visual">
+                                <div class="hero-card-float">
+                                    <div class="icon" aria-hidden="true">💻</div>
+                                    <div class="label">Em promoção</div>
+                                    <div class="value">Notebooks</div>
+                                    <div class="sub">Até 30% OFF</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="hero-slide hero-slide-3">
+                    <div class="container">
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
+                            <div class="hero-content">
+                                <div class="hero-tag"><i class="fas fa-star" aria-hidden="true"></i> Mais Vendidos</div>
+                                <h1 class="hero-title">Acessórios para <span class="highlight">completar</span> o seu
+                                    setup</h1>
+                                <p class="hero-desc">Fones, teclados, mouses e muito mais. Qualidade garantida com
+                                    suporte técnico especializado.</p>
+                                <div class="hero-actions">
+                                    <a href="#produtos" class="btn btn-primary"><i class="fas fa-headphones"
+                                            aria-hidden="true"></i> Ver Acessórios</a>
+                                    <a href="#faq" class="btn btn-outline">Tire suas dúvidas</a>
+                                </div>
+                            </div>
+                            <div class="hero-visual">
+                                <div class="hero-card-float">
+                                    <div class="icon" aria-hidden="true">🎧</div>
+                                    <div class="label">Mais vendido</div>
+                                    <div class="value">Fones Bluetooth</div>
+                                    <div class="sub">Frete Grátis</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <button class="hero-prev" id="hero-prev" aria-label="Slide anterior"><i
+                    class="fas fa-chevron-left"></i></button>
+            <button class="hero-next" id="hero-next" aria-label="Próximo slide"><i
+                    class="fas fa-chevron-right"></i></button>
+            <div class="hero-dots" role="tablist" aria-label="Slides">
+                <button class="hero-dot active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+                <button class="hero-dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+                <button class="hero-dot" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH -->
+    <section id="search-section" aria-label="Busca de produtos">
+        <div class="container">
+            <div class="search-bar-wrap">
+                <div class="search-bar-inner">
+                    <i class="fas fa-search search-icon-main" aria-hidden="true"></i>
+                    <input type="search" id="main-search" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+                </div>
+                <select id="category-filter" aria-label="Filtrar por categoria">
+                    <option value="all">Todas as Categorias</option>
+                    <option value="eletronicos">Eletrônicos</option>
+                    <option value="informatica">Informática</option>
+                    <option value="acessorios">Acessórios</option>
+                    <option value="promocoes">Promoções</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="produtos" class="section" aria-label="Catálogo de produtos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Catálogo</span>
+                <h2 class="section-title">Nossos Produtos</h2>
+                <p class="section-sub">Encontre os melhores produtos de tecnologia com preços incríveis e entrega
+                    garantida.</p>
+            </div>
+            <div class="cat-tabs" role="tablist" aria-label="Filtrar por categoria">
+                <button class="cat-tab active" data-cat="all" role="tab">Todos</button>
+                <button class="cat-tab" data-cat="eletronicos" role="tab">📱 Eletrônicos</button>
+                <button class="cat-tab" data-cat="informatica" role="tab">💻 Informática</button>
+                <button class="cat-tab" data-cat="acessorios" role="tab">🎧 Acessórios</button>
+                <button class="cat-tab" data-cat="promocoes" role="tab">🔥 Promoções</button>
+            </div>
+            <div class="products-grid" id="products-grid" role="list" aria-label="Lista de produtos"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="sobre" class="section bg-alt" aria-label="Sobre a empresa">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="about-visual-inner">
+                        <i class="fas fa-store" aria-hidden="true"></i>
+                        <p>TechStore — Desde 2016</p>
+                    </div>
+                    <div class="about-float-badge">
+                        <div class="num">8+</div>
+                        <div class="lbl">Anos no mercado</div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-eyebrow">Quem Somos</span>
+                    <h2 class="section-title">Tecnologia com quem você pode confiar</h2>
+                    <p>A TechStore nasceu em 2016 com uma missão clara: tornar a tecnologia acessível para todos os
+                        brasileiros, sem abrir mão da qualidade e do atendimento personalizado.</p>
+                    <p>Somos uma equipe apaixonada por inovação, comprometida em oferecer os melhores produtos do
+                        mercado com suporte técnico especializado e condições de pagamento que cabem no seu bolso.</p>
+                    <div class="mvv-grid">
+                        <div class="mvv-card">
+                            <i class="fas fa-bullseye" aria-hidden="true"></i>
+                            <h4>Missão</h4>
+                            <p>Democratizar o acesso à tecnologia com preços justos e atendimento de excelência.</p>
+                        </div>
+                        <div class="mvv-card">
+                            <i class="fas fa-eye" aria-hidden="true"></i>
+                            <h4>Visão</h4>
+                            <p>Ser a loja de tecnologia mais confiável e recomendada do Nordeste até 2030.</p>
+                        </div>
+                        <div class="mvv-card">
+                            <i class="fas fa-heart" aria-hidden="true"></i>
+                            <h4>Valores</h4>
+                            <p>Honestidade, inovação, compromisso com o cliente e respeito ao meio ambiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="avaliacoes" class="section bg-alt" aria-label="Avaliações de clientes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Depoimentos</span>
+                <h2 class="section-title">O que nossos clientes dizem</h2>
+                <p class="section-sub">Mais de 12.500 clientes satisfeitos. Veja o que eles falam sobre a TechStore.</p>
+            </div>
+            <div class="reviews-carousel">
+                <div class="reviews-track" id="reviews-track">
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">MA</div>
+                            <div>
+                                <div class="review-name">Maria Aparecida</div>
+                                <div class="review-date">Há 3 dias</div>
+                            </div>
+                        </div>
+                        <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+                        <p class="review-text">"Comprei um notebook e chegou muito rápido. Produto exatamente como
+                            descrito, embalagem perfeita. Atendimento pelo WhatsApp foi excepcional!"</p>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">JS</div>
+                            <div>
+                                <div class="review-name">João Silva</div>
+                                <div class="review-date">Há 1 semana</div>
+                            </div>
+                        </div>
+                        <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+                        <p class="review-text">"Melhor loja virtual que já comprei. Preço justo, entrega rápida e
+                            suporte técnico que realmente resolve. Já indiquei para vários amigos!"</p>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">CA</div>
+                            <div>
+                                <div class="review-name">Carla Andrade</div>
+                                <div class="review-date">Há 2 semanas</div>
+                            </div>
+                        </div>
+                        <div class="review-stars" aria-label="4 estrelas">★★★★☆</div>
+                        <p class="review-text">"Os fones de ouvido bluetooth que comprei são incríveis! Qualidade de som
+                            surpreendente para o preço. Voltarei a comprar com certeza."</p>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">RP</div>
+                            <div>
+                                <div class="review-name">Roberto Pereira</div>
+                                <div class="review-date">Há 3 semanas</div>
+                            </div>
+                        </div>
+                        <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+                        <p class="review-text">"Comprei o iPhone e o processo foi super simples. Finalizei pelo
+                            WhatsApp, o pagamento foi fácil e o produto chegou no prazo. Nota 10!"</p>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">FS</div>
+                            <div>
+                                <div class="review-name">Fernanda Santos</div>
+                                <div class="review-date">Há 1 mês</div>
+                            </div>
+                        </div>
+                        <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+                        <p class="review-text">"Atendimento humanizado e produtos de qualidade. A equipe da TechStore me
+                            ajudou a escolher o melhor produto para meu orçamento. Recomendo!"</p>
+                    </article>
+                </div>
+            </div>
+            <div class="reviews-controls">
+                <button class="rev-btn" id="rev-prev" aria-label="Avaliação anterior"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="rev-btn" id="rev-next" aria-label="Próxima avaliação"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section" aria-label="Perguntas frequentes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Dúvidas</span>
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-sub">Respostas para as principais dúvidas de nossos clientes.</p>
+            </div>
+            <div class="faq-list" role="list">
+                <div class="faq-item" role="listitem">
+                    <button class="faq-q" aria-expanded="false">Como faço um pedido? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-a" role="region">
+                        <p>É muito simples! Navegue pelo catálogo, adicione os produtos desejados ao carrinho e clique
+                            em "Finalizar pelo WhatsApp". Nossa equipe entrará em contato para confirmar o pedido e
+                            combinar a forma de pagamento.</p>
+                    </div>
+                </div>
+                <div class="faq-item" role="listitem">
+                    <button class="faq-q" aria-expanded="false">Quais formas de pagamento são aceitas? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-a" role="region">
+                        <p>Aceitamos PIX (com desconto de 5%), cartão de crédito em até 12x sem juros, cartão de débito,
+                            boleto bancário e transferência bancária. O pagamento é confirmado antes do envio do
+                            produto.</p>
+                    </div>
+                </div>
+                <div class="faq-item" role="listitem">
+                    <button class="faq-q" aria-expanded="false">Vocês entregam em minha região? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-a" role="region">
+                        <p>Entregamos para todo o Brasil via Correios (PAC e SEDEX) e transportadoras parceiras. Para a
+                            cidade de João Pessoa e região metropolitana, oferecemos entrega expressa em até 24h.</p>
+                    </div>
+                </div>
+                <div class="faq-item" role="listitem">
+                    <button class="faq-q" aria-expanded="false">Qual o prazo de entrega? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-a" role="region">
+                        <p>O prazo varia conforme a sua localização. Para João Pessoa: até 24h. Para capitais do
+                            Nordeste: 2 a 4 dias úteis. Para demais regiões do Brasil: 5 a 10 dias úteis via PAC ou 3 a
+                            5 dias via SEDEX.</p>
+                    </div>
+                </div>
+                <div class="faq-item" role="listitem">
+                    <button class="faq-q" aria-expanded="false">Os produtos têm garantia? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-a" role="region">
+                        <p>Sim! Todos os produtos possuem a garantia do fabricante (mínimo 12 meses). Além disso,
+                            oferecemos 7 dias para troca ou devolução caso o produto apresente defeito ou não
+                            corresponda ao descrito.</p>
+                    </div>
+                </div>
+                <div class="faq-item" role="listitem">
+                    <button class="faq-q" aria-expanded="false">Como acompanho meu pedido? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-a" role="region">
+                        <p>Após o envio, você receberá o código de rastreio pelo WhatsApp. É possível acompanhar o
+                            status da entrega diretamente no site dos Correios ou da transportadora responsável pelo seu
+                            pedido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contato" class="section bg-alt" aria-label="Contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Fale Conosco</span>
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-sub">Estamos aqui para ajudar. Escolha o canal de atendimento que preferir.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrap">
+                    <form id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-nome">Nome completo *</label>
+                                <input type="text" id="c-nome" placeholder="Seu nome" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="c-tel">Telefone</label>
+                                <input type="tel" id="c-tel" placeholder="(83) 99999-9999" autocomplete="tel">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-email">E-mail *</label>
+                            <input type="email" id="c-email" placeholder="seu@email.com" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="c-msg">Mensagem *</label>
+                            <textarea id="c-msg" placeholder="Como podemos ajudar você?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"
+                            style="width:100%;justify-content:center;padding:15px">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p>Nossa equipe está disponível para tirar suas dúvidas e ajudar com seu pedido.</p>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></div>
+                        <div class="contact-item-text">
+                            <span>WhatsApp</span>
+                            <strong>(83) 99999-9999</strong>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="contact-item-text">
+                            <span>E-mail</span>
+                            <strong>contato@techstore.com.br</strong>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+                        <div class="contact-item-text">
+                            <span>Horário de Atendimento</span>
+                            <strong>Segunda a Sexta: 8h – 18h · Sábado: 8h – 12h</strong>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                        <div class="contact-item-text">
+                            <span>Endereço</span>
+                            <strong>Av. Epitácio Pessoa, 1000 · Manaíra, João Pessoa – PB</strong>
+                        </div>
+                    </div>
+                    <div class="social-links" aria-label="Redes sociais">
+                        <a href="https://wa.me/5583999999999" class="social-link social-whatsapp" aria-label="WhatsApp"
+                            target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link social-instagram" aria-label="Instagram"><i
+                                class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link social-facebook" aria-label="Facebook"><i
+                                class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="mailto:contato@techstore.com.br" class="social-link social-email"
+                            aria-label="E-mail"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section id="localizacao" class="section" aria-label="Localização">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Onde Estamos</span>
+                <h2 class="section-title">Nossa Localização</h2>
+                <p class="section-sub">Visite nossa loja física ou entre em contato para mais informações.</p>
+            </div>
+            <div class="map-layout">
+                <div class="map-info">
+                    <h3>TechStore João Pessoa</h3>
+                    <div class="map-detail">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <div><span>Endereço</span>Av. Epitácio Pessoa, 1000, Manaíra<br>João Pessoa – PB, CEP 58038-000
+                        </div>
+                    </div>
+                    <div class="map-detail">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <div>
+                            <span>Horários</span>
+                            Segunda a Sexta: 8h às 18h<br>
+                            Sábado: 8h às 13h<br>
+                            Domingo: Fechado
+                        </div>
+                    </div>
+                    <div class="map-detail">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <div><span>Telefone</span>(83) 3333-4444</div>
+                    </div>
+                    <div class="map-detail">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        <div><span>WhatsApp</span>(83) 99999-9999</div>
+                    </div>
+                    <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:10px">
+                        <a href="https://wa.me/5583999999999" class="btn btn-whatsapp" target="_blank" rel="noopener"><i
+                                class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                        <a href="https://www.google.com/maps?q=João+Pessoa+PB" class="btn btn-ghost" target="_blank"
+                            rel="noopener"><i class="fas fa-directions" aria-hidden="true"></i> Como Chegar</a>
+                    </div>
+                </div>
+                <div class="map-iframe-wrap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.4!2d-34.845!3d-7.115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDYnNTQuMCJTIDM0wrA1MCc0Mi4wIlc!5e0!3m2!1spt-BR!2sbr!4v1"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização da TechStore em João Pessoa"
+                        aria-label="Mapa com a localização da TechStore">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="logo-icon" aria-hidden="true"><i class="fas fa-bolt"></i></div>
+                            Tech<span>Store</span>
+                        </div>
+                        <p class="footer-tagline">Tecnologia ao seu alcance desde 2016. Produtos de qualidade com os
+                            melhores preços e entrega rápida para todo o Brasil.</p>
+                        <div class="footer-social" aria-label="Redes sociais">
+                            <a href="https://wa.me/5583999999999" aria-label="WhatsApp" target="_blank"
+                                rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Menu Rápido</h4>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#avaliacoes">Avaliações</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Categorias</h4>
+                        <ul>
+                            <li><a href="#produtos" onclick="filterCat('eletronicos')">Eletrônicos</a></li>
+                            <li><a href="#produtos" onclick="filterCat('informatica')">Informática</a></li>
+                            <li><a href="#produtos" onclick="filterCat('acessorios')">Acessórios</a></li>
+                            <li><a href="#produtos" onclick="filterCat('promocoes')">Promoções</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Av. Epitácio Pessoa,
+                                1000 — João Pessoa, PB</span></div>
+                        <div class="footer-contact-item"><i class="fas fa-phone"></i><span>(83) 3333-4444</span></div>
+                        <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>(83) 99999-9999</span>
+                        </div>
+                        <div class="footer-contact-item"><i
+                                class="fas fa-envelope"></i><span>contato@techstore.com.br</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <span>© 2024 TechStore. Todos os direitos reservados.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART SIDEBAR -->
+    <div id="cart-overlay" role="dialog" aria-modal="true" aria-label="Carrinho de compras"></div>
+    <aside id="cart-sidebar" aria-label="Carrinho de compras">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart" aria-hidden="true"></i> Meu Carrinho</h3>
+            <button id="close-cart" aria-label="Fechar carrinho"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="cart-items" aria-live="polite"></div>
+        <div class="cart-footer">
+            <div class="cart-total-row"><span>Subtotal</span><span id="cart-subtotal">R$ 0,00</span></div>
+            <div class="cart-total-row"><span>Frete</span><span style="color:var(--success)">Calcular</span></div>
+            <div class="cart-grand-total"><span>Total</span><span id="cart-total">R$ 0,00</span></div>
+            <button id="btn-checkout"><i class="fab fa-whatsapp" aria-hidden="true"></i> Finalizar pelo
+                WhatsApp</button>
+        </div>
+    </aside>
+
+    <!-- MODAL -->
+    <div id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-box">
+            <div class="modal-icon" id="modal-icon" aria-hidden="true"></div>
+            <h3 id="modal-title"></h3>
+            <p id="modal-body"></p>
+            <div class="modal-actions" id="modal-actions"></div>
+        </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container" aria-live="polite" aria-atomic="false"></div>
+
+    <!-- BACK TO TOP -->
+    <button id="back-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/5583999999999" id="whatsapp-float" aria-label="Falar no WhatsApp" target="_blank"
+        rel="noopener">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <script src="/src/js/javascript.js"></script>
+</body>
+
+</html>

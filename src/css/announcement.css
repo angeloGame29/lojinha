@@ -1,0 +1,32 @@
+/* ===== ANNOUNCEMENT BAR ===== */
+#announcement-bar {
+    background: var(--accent-gradient);
+    color: #fff;
+    text-align: center;
+    font-size: .82rem;
+    font-weight: 600;
+    padding: 10px 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.announcement-slides {
+    display: flex;
+    gap: 80px;
+    animation: marquee 24s linear infinite;
+    white-space: nowrap;
+}
+
+.announcement-slides span::before {
+    content: "🔥 ";
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

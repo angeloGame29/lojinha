@@ -1,0 +1,124 @@
+/* ===== ABOUT ===== */
+#sobre {
+    background: var(--gray-50);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.about-visual {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    background: var(--accent-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.about-visual-inner {
+    text-align: center;
+}
+
+.about-visual-inner i {
+    font-size: 5rem;
+    margin-bottom: 16px;
+    opacity: .85;
+}
+
+.about-visual-inner p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: .9;
+}
+
+.about-float-badge {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+}
+
+[data-theme="dark"] .about-float-badge {
+    background: var(--gray-100);
+}
+
+.about-float-badge .num {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.about-float-badge .lbl {
+    font-size: .75rem;
+    color: var(--text-light);
+}
+
+.about-text .section-eyebrow {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.about-text .section-title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: var(--text-light);
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.mvv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.mvv-card {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius);
+    padding: 16px;
+    text-align: center;
+    transition: all var(--transition);
+}
+
+[data-theme="dark"] .mvv-card {
+    background: var(--gray-100);
+}
+
+.mvv-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.mvv-card i {
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.mvv-card h4 {
+    font-size: .85rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.mvv-card p {
+    font-size: .75rem;
+    color: var(--text-light);
+    line-height: 1.4;
+}
